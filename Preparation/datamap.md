@@ -1,5 +1,5 @@
 
-1) Studijní plány
+## 1) Studijní plány
 	Seznamy
 		* seznam_predmetu (List<Predmet>)
 		* seznam_studijnich_planu (List<Studijni_plan>)
@@ -27,7 +27,7 @@
 		* predmety (List<List<predmety_studijniho_planu>>)
 		
 		
-2) Zaměstnanci
+## 2) Zaměstnanci
 	Seznam zaměstnanců
 		* seznam_zamestnancu (List<zamestnanec>)
 		
@@ -42,11 +42,11 @@
 		* doktorant (string)
 		
 	
-3) Počty studentů
+## 3) Počty studentů
 	Seznam počtu studentů
 		* celkovy_pocet_studentu (List<studenti>)
 // vůbec netuším, musím dodělat		
 	
 	
-4) Úvazkový list
+## 4) Úvazkový list
 // pracovní body?
