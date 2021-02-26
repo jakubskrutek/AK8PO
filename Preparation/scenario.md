@@ -1,4 +1,4 @@
-1) Obecný scénář mojí aplikace:
+#### 1) Obecný scénář mojí aplikace:
 	Tvorba aplikace pro tajemníka ústavu (školy).
 	
 		* Tajemník může vytvářet a upravovat studijní plány.
@@ -24,7 +24,7 @@
 		* Pracovní štítky zobrazují údaje o vyučovaných předmětech, počtech přednášek, cvičení..., počtu pracovních bodů.				
 	
 
-2) Otázky na které se chci zeptat:
+#### 2) Otázky na které se chci zeptat:
 	* Pro ukládání dat je potřba použít SQL databázi nebo stačí XML?
 	* Pracovní štítky - uloží se do csv a z csv se budou také načítat, stačí to takto?
 	* Pracovní body - nerozumím tomu, jak to s nimi je nebo jak se rozdělují. Každý předmět má jiný počet pracovních bodů,
@@ -32,7 +32,7 @@
 	  soubor upravující váhu pracovních bodů? Kolik bodů je za vyzkoušeného studenta, kolik za předmět, který má cvičení atp?
 
 
-3) Technologie, které chci použít:
+#### 3) Technologie, které chci použít:
 	* Windows Forms - .NET framework pro tvorbu formulářů
 	* Class Library - knihovna tříd bude obsahovat jednotlivé třídy dle zadání
 	* SQL Database / XML? - ukládání dat
