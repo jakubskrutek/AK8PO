@@ -42,16 +42,11 @@
 		* doktorant (string)
 		
 	
-3) Počty studentů					// vůbec netuším, musím dodělat
+3) Počty studentů
 	Seznam počtu studentů
 		* celkovy_pocet_studentu (List<studenti>)
-		
-	.
-	.
-	.
+// vůbec netuším, musím dodělat		
 	
 	
 4) Úvazkový list
-	.
-	.
-	.
+// pracovní body?
