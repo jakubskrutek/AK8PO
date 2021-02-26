@@ -1,5 +1,6 @@
 
 1) Studijní plány
+=================
 	Seznamy
 		* seznam_predmetu (List<Predmet>)
 		* seznam_studijnich_planu (List<Studijni_plan>)
