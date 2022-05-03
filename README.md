@@ -9,7 +9,7 @@ ve formě - nástěnka s výsledky, statistiky, rozpis zápasů atd. pro potřeb
 #### Požadavky v bodech  
 •	jednoduché a intuitivní uživatelské rozhraní  
 •	dolování dat ze stránek se sportovními výsledky  
-•	vytváření tabulek s výsledky a různými statistickými daty pro potřeby tisku
+•	vytváření tabulek s výsledky a různými statistickými daty pro potřeby tisku  
 •	vytvoření rozpisu (časového harmonogramu soutěže)  
 •	export takto seskupených dat v patřičném formátu (např. .xls)  
 •	uchovávání dat  
