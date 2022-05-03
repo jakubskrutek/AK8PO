@@ -1,7 +1,7 @@
 ﻿
 namespace AK8PO
 {
-    partial class Form1
+    partial class MainForm
     {
         /// <summary>
         /// Vyžaduje se proměnná návrháře.
@@ -29,10 +29,18 @@ namespace AK8PO
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
+            this.SuspendLayout();
+            // 
+            // MainForm
+            // 
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Form1";
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MinimizeBox = false;
+            this.Name = "MainForm";
+            this.ResumeLayout(false);
+
         }
 
         #endregion
