@@ -12,9 +12,12 @@ namespace AK8PO
 {
     public partial class MainForm : Form
     {
+
         public MainForm()
         {
             InitializeComponent();
+
+
         }
     }
 }
