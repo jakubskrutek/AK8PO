@@ -33,6 +33,8 @@ namespace AK8PO
             this.muzstvoACheckBox = new System.Windows.Forms.CheckBox();
             this.muzstvoBCheckBox = new System.Windows.Forms.CheckBox();
             this.muzstvoCCheckBox = new System.Windows.Forms.CheckBox();
+            this.generujRozpisButton = new System.Windows.Forms.Button();
+            this.rozpisZpetButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -78,11 +80,33 @@ namespace AK8PO
             this.muzstvoCCheckBox.Text = "Mužstvo C:";
             this.muzstvoCCheckBox.UseVisualStyleBackColor = true;
             // 
+            // generujRozpisButton
+            // 
+            this.generujRozpisButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.generujRozpisButton.Location = new System.Drawing.Point(64, 221);
+            this.generujRozpisButton.Name = "generujRozpisButton";
+            this.generujRozpisButton.Size = new System.Drawing.Size(108, 32);
+            this.generujRozpisButton.TabIndex = 7;
+            this.generujRozpisButton.Text = "Generuj rozpis";
+            this.generujRozpisButton.UseVisualStyleBackColor = true;
+            // 
+            // rozpisZpetButton
+            // 
+            this.rozpisZpetButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.rozpisZpetButton.Location = new System.Drawing.Point(274, 221);
+            this.rozpisZpetButton.Name = "rozpisZpetButton";
+            this.rozpisZpetButton.Size = new System.Drawing.Size(108, 32);
+            this.rozpisZpetButton.TabIndex = 8;
+            this.rozpisZpetButton.Text = "Zpět";
+            this.rozpisZpetButton.UseVisualStyleBackColor = true;
+            // 
             // RozpisForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(444, 301);
+            this.Controls.Add(this.rozpisZpetButton);
+            this.Controls.Add(this.generujRozpisButton);
             this.Controls.Add(this.muzstvoCCheckBox);
             this.Controls.Add(this.muzstvoBCheckBox);
             this.Controls.Add(this.muzstvoACheckBox);
@@ -105,5 +129,7 @@ namespace AK8PO
         private System.Windows.Forms.CheckBox muzstvoACheckBox;
         private System.Windows.Forms.CheckBox muzstvoBCheckBox;
         private System.Windows.Forms.CheckBox muzstvoCCheckBox;
+        private System.Windows.Forms.Button generujRozpisButton;
+        private System.Windows.Forms.Button rozpisZpetButton;
     }
 }
