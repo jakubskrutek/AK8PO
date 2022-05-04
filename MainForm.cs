@@ -19,5 +19,15 @@ namespace AK8PO
 
 
         }
+
+        private void uspesnostiButton_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pridatRozpisButton_Click(object sender, EventArgs e)
+        {
+            
+        }
     }
 }

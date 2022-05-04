@@ -38,6 +38,7 @@ namespace AK8PO
             this.openAButton = new System.Windows.Forms.Button();
             this.openBButton = new System.Windows.Forms.Button();
             this.openCButton = new System.Windows.Forms.Button();
+            this.openADialog = new System.Windows.Forms.OpenFileDialog();
             this.SuspendLayout();
             // 
             // label1
@@ -111,32 +112,41 @@ namespace AK8PO
             // 
             // openAButton
             // 
-            this.openAButton.Location = new System.Drawing.Point(170, 78);
+            this.openAButton.Image = global::AK8PO.Properties.Resources.openFile;
+            this.openAButton.Location = new System.Drawing.Point(170, 77);
             this.openAButton.Name = "openAButton";
-            this.openAButton.Size = new System.Drawing.Size(30, 30);
+            this.openAButton.Size = new System.Drawing.Size(35, 35);
             this.openAButton.TabIndex = 9;
             this.openAButton.UseVisualStyleBackColor = true;
+            this.openAButton.Click += new System.EventHandler(this.openAButton_Click);
             // 
             // openBButton
             // 
-            this.openBButton.Location = new System.Drawing.Point(170, 135);
+            this.openBButton.Image = global::AK8PO.Properties.Resources.openFile;
+            this.openBButton.Location = new System.Drawing.Point(170, 134);
             this.openBButton.Name = "openBButton";
-            this.openBButton.Size = new System.Drawing.Size(30, 30);
+            this.openBButton.Size = new System.Drawing.Size(35, 35);
             this.openBButton.TabIndex = 10;
             this.openBButton.UseVisualStyleBackColor = true;
             // 
             // openCButton
             // 
-            this.openCButton.Location = new System.Drawing.Point(170, 192);
+            this.openCButton.Image = global::AK8PO.Properties.Resources.openFile;
+            this.openCButton.Location = new System.Drawing.Point(170, 191);
             this.openCButton.Name = "openCButton";
-            this.openCButton.Size = new System.Drawing.Size(30, 30);
+            this.openCButton.Size = new System.Drawing.Size(35, 35);
             this.openCButton.TabIndex = 11;
             this.openCButton.UseVisualStyleBackColor = true;
+            // 
+            // openADialog
+            // 
+            this.openADialog.FileName = "openFileDialog1";
             // 
             // RozpisForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(592, 370);
             this.Controls.Add(this.openCButton);
             this.Controls.Add(this.openBButton);
@@ -171,5 +181,6 @@ namespace AK8PO
         private System.Windows.Forms.Button openAButton;
         private System.Windows.Forms.Button openBButton;
         private System.Windows.Forms.Button openCButton;
+        private System.Windows.Forms.OpenFileDialog openADialog;
     }
 }

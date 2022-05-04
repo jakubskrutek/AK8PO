@@ -62,9 +62,11 @@ namespace AK8PO
             // 
             // pridatRozpisButton
             // 
+            this.pridatRozpisButton.BackColor = System.Drawing.SystemColors.Control;
             resources.ApplyResources(this.pridatRozpisButton, "pridatRozpisButton");
             this.pridatRozpisButton.Name = "pridatRozpisButton";
-            this.pridatRozpisButton.UseVisualStyleBackColor = true;
+            this.pridatRozpisButton.UseVisualStyleBackColor = false;
+            this.pridatRozpisButton.Click += new System.EventHandler(this.pridatRozpisButton_Click);
             // 
             // tabulkyButton
             // 
@@ -83,6 +85,7 @@ namespace AK8PO
             resources.ApplyResources(this.uspesnostiButton, "uspesnostiButton");
             this.uspesnostiButton.Name = "uspesnostiButton";
             this.uspesnostiButton.UseVisualStyleBackColor = true;
+            this.uspesnostiButton.Click += new System.EventHandler(this.uspesnostiButton_Click);
             // 
             // MainForm
             // 

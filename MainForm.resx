@@ -129,16 +129,19 @@
     <value>NoControl</value>
   </data>
   <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>10, 10</value>
+    <value>13, 12</value>
+  </data>
+  <data name="label1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="label1.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 15, 0, 0</value>
+    <value>0, 18, 0, 0</value>
   </data>
   <data name="label1.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
     <value>No</value>
   </data>
   <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>424, 281</value>
+    <value>566, 346</value>
   </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="label1.TabIndex" type="System.Int32, mscorlib">
@@ -169,10 +172,13 @@
     <value>NoControl</value>
   </data>
   <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>10, 72</value>
+    <value>13, 89</value>
+  </data>
+  <data name="label2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>424, 29</value>
+    <value>565, 36</value>
   </data>
   <data name="label2.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -202,10 +208,13 @@
     <value>Microsoft Sans Serif, 11.25pt</value>
   </data>
   <data name="rozpisLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>11, 113</value>
+    <value>15, 139</value>
+  </data>
+  <data name="rozpisLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="rozpisLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>241, 18</value>
+    <value>313, 24</value>
   </data>
   <data name="rozpisLabel.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -232,10 +241,13 @@
     <value>Microsoft Sans Serif, 11.25pt</value>
   </data>
   <data name="sezonaLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>286, 113</value>
+    <value>381, 139</value>
+  </data>
+  <data name="sezonaLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="sezonaLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>93, 18</value>
+    <value>116, 24</value>
   </data>
   <data name="sezonaLabel.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -255,14 +267,20 @@
   <data name="&gt;&gt;sezonaLabel.ZOrder" xml:space="preserve">
     <value>4</value>
   </data>
+  <data name="pridatRozpisButton.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>System</value>
+  </data>
   <data name="pridatRozpisButton.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 12pt, style=Bold</value>
   </data>
   <data name="pridatRozpisButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>141, 166</value>
+    <value>188, 204</value>
+  </data>
+  <data name="pridatRozpisButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="pridatRozpisButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>168, 32</value>
+    <value>224, 39</value>
   </data>
   <data name="pridatRozpisButton.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
@@ -286,10 +304,13 @@
     <value>Microsoft Sans Serif, 9.75pt</value>
   </data>
   <data name="tabulkyButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>14, 241</value>
+    <value>19, 297</value>
+  </data>
+  <data name="tabulkyButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="tabulkyButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>108, 32</value>
+    <value>144, 39</value>
   </data>
   <data name="tabulkyButton.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
@@ -316,10 +337,13 @@
     <value>NoControl</value>
   </data>
   <data name="zapisyButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>170, 241</value>
+    <value>227, 297</value>
+  </data>
+  <data name="zapisyButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="zapisyButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>108, 32</value>
+    <value>144, 39</value>
   </data>
   <data name="zapisyButton.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
@@ -346,10 +370,13 @@
     <value>NoControl</value>
   </data>
   <data name="uspesnostiButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>323, 241</value>
+    <value>431, 297</value>
+  </data>
+  <data name="uspesnostiButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="uspesnostiButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>108, 32</value>
+    <value>144, 39</value>
   </data>
   <data name="uspesnostiButton.TabIndex" type="System.Int32, mscorlib">
     <value>7</value>
@@ -373,10 +400,10 @@
     <value>True</value>
   </metadata>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>6, 13</value>
+    <value>8, 16</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>444, 301</value>
+    <value>592, 370</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -2481,8 +2508,11 @@
         AAMAAMABAADgAQAA4AAAAMAAAADAAQAAgAEAAIABAACAAwAAwAMAAMADAADgBwAA8H8AAA==
 </value>
   </data>
+  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
   <data name="$this.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>10, 10, 10, 10</value>
+    <value>13, 12, 13, 12</value>
   </data>
   <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
     <value>CenterScreen</value>
