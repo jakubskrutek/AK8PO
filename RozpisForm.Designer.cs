@@ -35,10 +35,16 @@ namespace AK8PO
             this.muzstvoCCheckBox = new System.Windows.Forms.CheckBox();
             this.generujRozpisButton = new System.Windows.Forms.Button();
             this.rozpisZpetButton = new System.Windows.Forms.Button();
-            this.openAButton = new System.Windows.Forms.Button();
-            this.openBButton = new System.Windows.Forms.Button();
-            this.openCButton = new System.Windows.Forms.Button();
             this.openADialog = new System.Windows.Forms.OpenFileDialog();
+            this.checkAPictureBox = new System.Windows.Forms.PictureBox();
+            this.openCButton = new System.Windows.Forms.Button();
+            this.openBButton = new System.Windows.Forms.Button();
+            this.openAButton = new System.Windows.Forms.Button();
+            this.checkBPictureBox = new System.Windows.Forms.PictureBox();
+            this.checkCPictureBox = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.checkAPictureBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.checkBPictureBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.checkCPictureBox)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -104,6 +110,42 @@ namespace AK8PO
             this.rozpisZpetButton.Text = "Zpět";
             this.rozpisZpetButton.UseVisualStyleBackColor = true;
             // 
+            // openADialog
+            // 
+            this.openADialog.FileName = "openFileDialog1";
+            // 
+            // checkAPictureBox
+            // 
+            this.checkAPictureBox.Image = global::AK8PO.Properties.Resources.check;
+            this.checkAPictureBox.Location = new System.Drawing.Point(171, 62);
+            this.checkAPictureBox.Name = "checkAPictureBox";
+            this.checkAPictureBox.Size = new System.Drawing.Size(30, 30);
+            this.checkAPictureBox.TabIndex = 12;
+            this.checkAPictureBox.TabStop = false;
+            this.checkAPictureBox.Visible = false;
+            // 
+            // openCButton
+            // 
+            this.openCButton.Image = global::AK8PO.Properties.Resources.openFile;
+            this.openCButton.Location = new System.Drawing.Point(133, 155);
+            this.openCButton.Margin = new System.Windows.Forms.Padding(2);
+            this.openCButton.Name = "openCButton";
+            this.openCButton.Size = new System.Drawing.Size(26, 28);
+            this.openCButton.TabIndex = 11;
+            this.openCButton.UseVisualStyleBackColor = true;
+            this.openCButton.Click += new System.EventHandler(this.openCButton_Click);
+            // 
+            // openBButton
+            // 
+            this.openBButton.Image = global::AK8PO.Properties.Resources.openFile;
+            this.openBButton.Location = new System.Drawing.Point(133, 109);
+            this.openBButton.Margin = new System.Windows.Forms.Padding(2);
+            this.openBButton.Name = "openBButton";
+            this.openBButton.Size = new System.Drawing.Size(26, 28);
+            this.openBButton.TabIndex = 10;
+            this.openBButton.UseVisualStyleBackColor = true;
+            this.openBButton.Click += new System.EventHandler(this.openBButton_Click);
+            // 
             // openAButton
             // 
             this.openAButton.Image = global::AK8PO.Properties.Resources.openFile;
@@ -115,29 +157,25 @@ namespace AK8PO
             this.openAButton.UseVisualStyleBackColor = true;
             this.openAButton.Click += new System.EventHandler(this.openAButton_Click);
             // 
-            // openBButton
+            // checkBPictureBox
             // 
-            this.openBButton.Image = global::AK8PO.Properties.Resources.openFile;
-            this.openBButton.Location = new System.Drawing.Point(133, 109);
-            this.openBButton.Margin = new System.Windows.Forms.Padding(2);
-            this.openBButton.Name = "openBButton";
-            this.openBButton.Size = new System.Drawing.Size(26, 28);
-            this.openBButton.TabIndex = 10;
-            this.openBButton.UseVisualStyleBackColor = true;
+            this.checkBPictureBox.Image = global::AK8PO.Properties.Resources.check;
+            this.checkBPictureBox.Location = new System.Drawing.Point(171, 108);
+            this.checkBPictureBox.Name = "checkBPictureBox";
+            this.checkBPictureBox.Size = new System.Drawing.Size(30, 30);
+            this.checkBPictureBox.TabIndex = 12;
+            this.checkBPictureBox.TabStop = false;
+            this.checkBPictureBox.Visible = false;
             // 
-            // openCButton
+            // checkCPictureBox
             // 
-            this.openCButton.Image = global::AK8PO.Properties.Resources.openFile;
-            this.openCButton.Location = new System.Drawing.Point(133, 155);
-            this.openCButton.Margin = new System.Windows.Forms.Padding(2);
-            this.openCButton.Name = "openCButton";
-            this.openCButton.Size = new System.Drawing.Size(26, 28);
-            this.openCButton.TabIndex = 11;
-            this.openCButton.UseVisualStyleBackColor = true;
-            // 
-            // openADialog
-            // 
-            this.openADialog.FileName = "openFileDialog1";
+            this.checkCPictureBox.Image = global::AK8PO.Properties.Resources.check;
+            this.checkCPictureBox.Location = new System.Drawing.Point(171, 153);
+            this.checkCPictureBox.Name = "checkCPictureBox";
+            this.checkCPictureBox.Size = new System.Drawing.Size(30, 30);
+            this.checkCPictureBox.TabIndex = 12;
+            this.checkCPictureBox.TabStop = false;
+            this.checkCPictureBox.Visible = false;
             // 
             // RozpisForm
             // 
@@ -145,6 +183,9 @@ namespace AK8PO
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(444, 301);
+            this.Controls.Add(this.checkCPictureBox);
+            this.Controls.Add(this.checkBPictureBox);
+            this.Controls.Add(this.checkAPictureBox);
             this.Controls.Add(this.openCButton);
             this.Controls.Add(this.openBButton);
             this.Controls.Add(this.openAButton);
@@ -161,6 +202,9 @@ namespace AK8PO
             this.Name = "RozpisForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Rozpis";
+            ((System.ComponentModel.ISupportInitialize)(this.checkAPictureBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.checkBPictureBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.checkCPictureBox)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -178,5 +222,8 @@ namespace AK8PO
         private System.Windows.Forms.Button openBButton;
         private System.Windows.Forms.Button openCButton;
         private System.Windows.Forms.OpenFileDialog openADialog;
+        private System.Windows.Forms.PictureBox checkAPictureBox;
+        private System.Windows.Forms.PictureBox checkBPictureBox;
+        private System.Windows.Forms.PictureBox checkCPictureBox;
     }
 }
