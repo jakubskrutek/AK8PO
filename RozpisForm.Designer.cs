@@ -42,6 +42,7 @@ namespace AK8PO
             this.openAButton = new System.Windows.Forms.Button();
             this.checkBPictureBox = new System.Windows.Forms.PictureBox();
             this.checkCPictureBox = new System.Windows.Forms.PictureBox();
+            this.rozpisListBox = new System.Windows.Forms.ListBox();
             ((System.ComponentModel.ISupportInitialize)(this.checkAPictureBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.checkBPictureBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.checkCPictureBox)).BeginInit();
@@ -93,7 +94,7 @@ namespace AK8PO
             // generujRozpisButton
             // 
             this.generujRozpisButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.generujRozpisButton.Location = new System.Drawing.Point(54, 221);
+            this.generujRozpisButton.Location = new System.Drawing.Point(51, 257);
             this.generujRozpisButton.Name = "generujRozpisButton";
             this.generujRozpisButton.Size = new System.Drawing.Size(108, 32);
             this.generujRozpisButton.TabIndex = 7;
@@ -103,12 +104,13 @@ namespace AK8PO
             // rozpisZpetButton
             // 
             this.rozpisZpetButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.rozpisZpetButton.Location = new System.Drawing.Point(274, 221);
+            this.rozpisZpetButton.Location = new System.Drawing.Point(279, 257);
             this.rozpisZpetButton.Name = "rozpisZpetButton";
             this.rozpisZpetButton.Size = new System.Drawing.Size(108, 32);
             this.rozpisZpetButton.TabIndex = 8;
             this.rozpisZpetButton.Text = "Zpět";
             this.rozpisZpetButton.UseVisualStyleBackColor = true;
+            this.rozpisZpetButton.Click += new System.EventHandler(this.rozpisZpetButton_Click);
             // 
             // openADialog
             // 
@@ -177,12 +179,24 @@ namespace AK8PO
             this.checkCPictureBox.TabStop = false;
             this.checkCPictureBox.Visible = false;
             // 
+            // rozpisListBox
+            // 
+            this.rozpisListBox.BackColor = System.Drawing.Color.White;
+            this.rozpisListBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.rozpisListBox.FormattingEnabled = true;
+            this.rozpisListBox.ItemHeight = 16;
+            this.rozpisListBox.Location = new System.Drawing.Point(229, 62);
+            this.rozpisListBox.Name = "rozpisListBox";
+            this.rozpisListBox.Size = new System.Drawing.Size(179, 164);
+            this.rozpisListBox.TabIndex = 13;
+            // 
             // RozpisForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(444, 301);
+            this.Controls.Add(this.rozpisListBox);
             this.Controls.Add(this.checkCPictureBox);
             this.Controls.Add(this.checkBPictureBox);
             this.Controls.Add(this.checkAPictureBox);
@@ -202,6 +216,7 @@ namespace AK8PO
             this.Name = "RozpisForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Rozpis";
+            this.Load += new System.EventHandler(this.RozpisForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.checkAPictureBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.checkBPictureBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.checkCPictureBox)).EndInit();
@@ -225,5 +240,6 @@ namespace AK8PO
         private System.Windows.Forms.PictureBox checkAPictureBox;
         private System.Windows.Forms.PictureBox checkBPictureBox;
         private System.Windows.Forms.PictureBox checkCPictureBox;
+        private System.Windows.Forms.ListBox rozpisListBox;
     }
 }

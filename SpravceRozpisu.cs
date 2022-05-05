@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -8,11 +9,13 @@ namespace AK8PO
 {
     public class SpravceRozpisu
     {
-        public List<Rozpis> Rozpisy { get; set; }
+        public BindingList<Rozpis> Rozpisy { get; set; }
+
+        public BindingList<string> Teamy = new BindingList<string>();
 
         public SpravceRozpisu()
         {
-            Rozpisy = new List<Rozpis>();
+            Rozpisy = new BindingList<Rozpis>();
         }
 
         public void Nahraj(string muzstvo, string rozpisText)
@@ -22,6 +25,7 @@ namespace AK8PO
             string[,] zpracovanyRozpis = ZpracujRozpis(rozpisText);
             Rozpis rozpis = new Rozpis(muzstvo, zpracovanyRozpis);        // tady přijde už upravený string (metoda v metodě asi)
             Rozpisy.Add(rozpis);
+            NactiTeamy(zpracovanyRozpis);
         }
 
         private string[,] ZpracujRozpis(string rozpisText)
@@ -153,6 +157,18 @@ namespace AK8PO
                     vyslednyRozpis[i, j] = udaje[i, j];
             }
             return vyslednyRozpis;
+        }
+
+        private void NactiTeamy(string[,] rozpis)
+        {
+            for (int i = 0; i < rozpis.GetLength(0); i++) {
+                string team = rozpis[i, 2];
+                if (Teamy.Contains(team) == false)
+                    Teamy.Add(team);
+                team = rozpis[i, 3];
+                if (Teamy.Contains(team) == false)
+                    Teamy.Add(team);
+            }
         }
     }
 }

@@ -20,6 +20,7 @@ namespace AK8PO
             InitializeComponent();
 
             this.spravceRozpisu = spravceRozpisu;
+            rozpisListBox.DataSource = spravceRozpisu.Teamy;
         }
 
         private void openAButton_Click(object sender, EventArgs e)
@@ -71,6 +72,16 @@ namespace AK8PO
             catch (Exception ex) {
                 MessageBox.Show(ex.Message, "Chyba", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
+        }
+
+        private void rozpisZpetButton_Click(object sender, EventArgs e)
+        {
+            this.DialogResult = System.Windows.Forms.DialogResult.No;
+        }
+
+        private void RozpisForm_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
