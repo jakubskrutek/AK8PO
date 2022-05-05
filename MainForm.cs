@@ -12,12 +12,13 @@ namespace AK8PO
 {
     public partial class MainForm : Form
     {
+        private SpravceRozpisu spravceRozpisu = new SpravceRozpisu();
 
         public MainForm()
         {
             InitializeComponent();
 
-
+            // tady přidám fajfku na formulář po úspěšném nahrání souboru
         }
 
         private void uspesnostiButton_Click(object sender, EventArgs e)
@@ -27,7 +28,8 @@ namespace AK8PO
 
         private void pridatRozpisButton_Click(object sender, EventArgs e)
         {
-            
+            RozpisForm rozpisForm = new RozpisForm(spravceRozpisu);
+            rozpisForm.ShowDialog();
         }
     }
 }

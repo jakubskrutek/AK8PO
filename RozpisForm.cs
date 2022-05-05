@@ -13,14 +13,13 @@ namespace AK8PO
 {
     public partial class RozpisForm : Form
     {
-        public RozpisForm()
+        private SpravceRozpisu spravceRozpisu;
+
+        public RozpisForm(SpravceRozpisu spravceRozpisu)
         {
             InitializeComponent();
-        }
 
-        private void label3_Click(object sender, EventArgs e)
-        {
-
+            this.spravceRozpisu = spravceRozpisu;
         }
 
         private void openAButton_Click(object sender, EventArgs e)
@@ -29,6 +28,13 @@ namespace AK8PO
             string muzstvo = "tým A";
             string nazevSouboru = openADialog.FileName;
             string rozpisText = File.ReadAllText(nazevSouboru);
+
+            try {
+                spravceRozpisu.Nahraj(muzstvo, rozpisText);
+            }
+            catch (Exception ex) {
+                MessageBox.Show(ex.Message, "Chyba", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            }
         }
     }
 }
