@@ -108,7 +108,7 @@ namespace AK8PO
             // 
             this.openAButton.Image = global::AK8PO.Properties.Resources.openFile;
             this.openAButton.Location = new System.Drawing.Point(133, 63);
-            this.openAButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.openAButton.Margin = new System.Windows.Forms.Padding(2);
             this.openAButton.Name = "openAButton";
             this.openAButton.Size = new System.Drawing.Size(26, 28);
             this.openAButton.TabIndex = 9;
@@ -119,7 +119,7 @@ namespace AK8PO
             // 
             this.openBButton.Image = global::AK8PO.Properties.Resources.openFile;
             this.openBButton.Location = new System.Drawing.Point(133, 109);
-            this.openBButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.openBButton.Margin = new System.Windows.Forms.Padding(2);
             this.openBButton.Name = "openBButton";
             this.openBButton.Size = new System.Drawing.Size(26, 28);
             this.openBButton.TabIndex = 10;
@@ -129,7 +129,7 @@ namespace AK8PO
             // 
             this.openCButton.Image = global::AK8PO.Properties.Resources.openFile;
             this.openCButton.Location = new System.Drawing.Point(133, 155);
-            this.openCButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.openCButton.Margin = new System.Windows.Forms.Padding(2);
             this.openCButton.Name = "openCButton";
             this.openCButton.Size = new System.Drawing.Size(26, 28);
             this.openCButton.TabIndex = 11;

@@ -9,9 +9,9 @@ namespace AK8PO
     public class Rozpis
     {
         public string Muzstvo { get; set; }
-        public string RozpisText { get; set; }
+        public string[,] RozpisText { get; set; }
 
-        public Rozpis(string muzstvo, string rozpisText)
+        public Rozpis(string muzstvo, string[,] rozpisText)
         {
             Muzstvo = muzstvo;
             RozpisText = rozpisText;
