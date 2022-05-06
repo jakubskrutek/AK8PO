@@ -26,12 +26,12 @@ namespace AK8PO
         private void openAButton_Click(object sender, EventArgs e)
         {
             openADialog.ShowDialog();            
-            string muzstvo = "tým A";
+            string muzstvo = "teamA";
             string nazevSouboru = openADialog.FileName;
             string rozpisText = File.ReadAllText(nazevSouboru);
 
             try {
-                spravceRozpisu.Nahraj(muzstvo, rozpisText);
+                spravceRozpisu.NahrajRozpis(muzstvo, rozpisText);
                 checkAPictureBox.Visible = true;
                 muzstvoACheckBox.Checked = true;
             }
@@ -43,12 +43,12 @@ namespace AK8PO
         private void openBButton_Click(object sender, EventArgs e)
         {
             openADialog.ShowDialog();
-            string muzstvo = "tým B";
+            string muzstvo = "teamB";
             string nazevSouboru = openADialog.FileName;
             string rozpisText = File.ReadAllText(nazevSouboru);
 
             try {
-                spravceRozpisu.Nahraj(muzstvo, rozpisText);
+                spravceRozpisu.NahrajRozpis(muzstvo, rozpisText);
                 checkBPictureBox.Visible = true;
                 muzstvoBCheckBox.Checked = true;
             }
@@ -60,12 +60,12 @@ namespace AK8PO
         private void openCButton_Click(object sender, EventArgs e)
         {
             openADialog.ShowDialog();
-            string muzstvo = "tým C";
+            string muzstvo = "teamC";
             string nazevSouboru = openADialog.FileName;
             string rozpisText = File.ReadAllText(nazevSouboru);
 
             try {
-                spravceRozpisu.Nahraj(muzstvo, rozpisText);
+                spravceRozpisu.NahrajRozpis(muzstvo, rozpisText);
                 checkCPictureBox.Visible = true;
                 muzstvoCCheckBox.Checked = true;
             }
@@ -82,6 +82,37 @@ namespace AK8PO
         private void RozpisForm_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void generujRozpisButton_Click(object sender, EventArgs e)
+        {
+            string team = "";
+            if (muzstvoACheckBox.Checked)
+                team = "teamA";
+            else if (muzstvoBCheckBox.Checked)
+                team = "teamB";
+            else if (muzstvoCCheckBox.Checked)
+                team = "teamC";
+            Rozpis vracenyRozpis = spravceRozpisu.GenerujRozpis(team);
+
+            generujSaveFileDialog.Filter = "csv file (*.csv)|*.csv| txt files (*.txt)|*.txt| All Files (*.*)|*.*";
+            generujSaveFileDialog.FilterIndex = 1;
+            generujSaveFileDialog.RestoreDirectory = true;
+
+            if (generujSaveFileDialog.ShowDialog() == DialogResult.OK) {
+                System.IO.StreamWriter file = new System.IO.StreamWriter(generujSaveFileDialog.FileName.ToString());
+                for (int i = 0; i < vracenyRozpis.RozpisText.GetLength(0); i++) {
+                     string obsah = "";
+                     for (int j = 0; j < vracenyRozpis.RozpisText.GetLength(1); j++) {
+                         if (j == 0)
+                             obsah = vracenyRozpis.RozpisText[i, j].ToString();
+                         else
+                             obsah += ";" + vracenyRozpis.RozpisText[i, j].ToString();
+                     }
+                     file.WriteLine(obsah);
+                 }
+                file.Close();
+            }
         }
     }
 }

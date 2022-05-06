@@ -18,7 +18,7 @@ namespace AK8PO
             Rozpisy = new BindingList<Rozpis>();
         }
 
-        public void Nahraj(string muzstvo, string rozpisText)
+        public void NahrajRozpis(string muzstvo, string rozpisText)
         {
             if (rozpisText.Contains("Český stolní tenis") == false)        // podmínka pro výjimku, doplň později
                 throw new ArgumentException("Zvolen nesprávný .txt soubor s daty.");
@@ -26,6 +26,13 @@ namespace AK8PO
             Rozpis rozpis = new Rozpis(muzstvo, zpracovanyRozpis);        // tady přijde už upravený string (metoda v metodě asi)
             Rozpisy.Add(rozpis);
             NactiTeamy(zpracovanyRozpis);
+        }
+
+        public Rozpis GenerujRozpis(string team) {
+            var dotaz = from j in Rozpisy
+                        where j.Muzstvo == team
+                        select j;
+            return dotaz.First();
         }
 
         private string[,] ZpracujRozpis(string rozpisText)
@@ -170,5 +177,7 @@ namespace AK8PO
                     Teamy.Add(team);
             }
         }
+
+
     }
 }

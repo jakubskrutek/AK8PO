@@ -43,6 +43,7 @@ namespace AK8PO
             this.checkBPictureBox = new System.Windows.Forms.PictureBox();
             this.checkCPictureBox = new System.Windows.Forms.PictureBox();
             this.rozpisListBox = new System.Windows.Forms.ListBox();
+            this.generujSaveFileDialog = new System.Windows.Forms.SaveFileDialog();
             ((System.ComponentModel.ISupportInitialize)(this.checkAPictureBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.checkBPictureBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.checkCPictureBox)).BeginInit();
@@ -100,6 +101,7 @@ namespace AK8PO
             this.generujRozpisButton.TabIndex = 7;
             this.generujRozpisButton.Text = "Generuj rozpis";
             this.generujRozpisButton.UseVisualStyleBackColor = true;
+            this.generujRozpisButton.Click += new System.EventHandler(this.generujRozpisButton_Click);
             // 
             // rozpisZpetButton
             // 
@@ -241,5 +243,6 @@ namespace AK8PO
         private System.Windows.Forms.PictureBox checkBPictureBox;
         private System.Windows.Forms.PictureBox checkCPictureBox;
         private System.Windows.Forms.ListBox rozpisListBox;
+        private System.Windows.Forms.SaveFileDialog generujSaveFileDialog;
     }
 }
